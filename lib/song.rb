@@ -13,6 +13,7 @@ class Song
   end
 
   def self.create
+    
     song = self.new
       @@all << song
         song
@@ -29,6 +30,14 @@ class Song
       song.name = name
       @@all << song
         song
+   end
+
+   def self.create_name_and_artist(artist, song)
+    song = self.new
+      song.name = name
+      @@all << song
+        song
+    @artist_name = artist
    end
 
    def self.find_by_name(name)
