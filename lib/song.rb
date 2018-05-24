@@ -53,6 +53,7 @@ class Song
   a
   self.create_by_name(a[1])
     @artist_name = a[2]
+    @artist_name
   binding.pry
   end
 
