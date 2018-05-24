@@ -43,7 +43,7 @@ def self.find_or_create_by_name(name)
     @@all.detect do |x|
          x.name == name
        end
-        
+
   else
     self.create_by_name(name)
 end
