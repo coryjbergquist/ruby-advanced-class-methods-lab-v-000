@@ -57,6 +57,9 @@ class Song
     a =  filename.split("-").map do |x| x.chomp(".mp3").strip
     end
 
-      self.new_by_name_and_artist(a[1], a[0])
+      song = self.create_by_name(a[1])
+      binding.pry
+        song.artist_name = a[0]
     end
+
   end
