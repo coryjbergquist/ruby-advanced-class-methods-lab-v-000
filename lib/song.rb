@@ -34,7 +34,7 @@ class Song
 
    def self.create_name_and_artist(artist, song)
     song = self.new
-      song.name = name
+      song.name = song
       @@all << song
         song
     @artist_name = artist
