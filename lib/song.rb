@@ -65,6 +65,7 @@ class Song
         #binding.pry
           song.artist_name = a[0]
           @@all << song
+          song
       end
 
 
