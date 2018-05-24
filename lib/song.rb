@@ -49,10 +49,9 @@ class Song
 
   def self.new_from_filename(filename)
   a =  filename.split("-").map do |x| x.chomp(".mp3")
-  b = a.map do |x| x.chomp(".mp3")
   end
   a
-  b
+
   binding.pry
   end
 
