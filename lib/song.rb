@@ -40,8 +40,9 @@ end
 
 def self.find_or_create_by_name(name)
   a = self.find_by_name(name)
+  a
   binding.pry
-  if name == a.name 
+  if name == a.name
     a
 
   else
