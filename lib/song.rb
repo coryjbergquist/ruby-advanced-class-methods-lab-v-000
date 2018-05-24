@@ -25,12 +25,6 @@ class Song
       song
    end
 
-   def self.new_by_name_and_artist(name, artist)
-     song = self.new
-      song.name = name
-      song.artist_name = artist
-    end
-
    def self.create_by_name(name)
     song = self.new
       song.name = name
@@ -62,6 +56,16 @@ class Song
         song.artist_name = a[0]
         song
     end
+
+    def self.create_from_filename(filename)
+      a =  filename.split("-").map do |x| x.chomp(".mp3").strip
+      end
+
+        song = self.create_by_name(a[1])
+        #binding.pry
+          song.artist_name = a[0]
+          song
+      end
 
     
 
