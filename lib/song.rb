@@ -37,7 +37,7 @@ class Song
       song_name.name = song
       @@all << song_name
         song_name
-    song_name.artist = artist
+    song_name.artist_name = artist
    end
 
    def self.find_by_name(name)
