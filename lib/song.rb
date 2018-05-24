@@ -33,9 +33,9 @@ class Song
    end
 
    def self.create_name_and_artist(artist, song)
-    song = self.new
+    new = self.new
       song.name = song
-      @@all << song
+      @@all << new
         song
     @artist_name = artist
    end
