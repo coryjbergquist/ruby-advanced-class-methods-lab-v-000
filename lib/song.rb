@@ -39,15 +39,10 @@ class Song
 end
 
 def self.find_or_create_by_name(name)
-  a = []
-  a << self.find_by_name(name)
-  a
-  binding.pry
-  if name == a.name
-    a
-
+  if self.name == name
+    self.find_by_name(name)
   else
-    self.create_by_name(name)
+    self.create_by_name(name) if
 end
 end
 
