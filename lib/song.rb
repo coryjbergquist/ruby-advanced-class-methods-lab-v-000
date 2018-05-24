@@ -52,6 +52,7 @@ class Song
   b = a.map do |x| x.chomp(".mp3")
   end
   a
+  b
   binding.pry
   end
 
