@@ -51,8 +51,7 @@ class Song
   end
 
     self.create_by_name(a[1])
-      @artist_name = a[0]
-      @artist_name
+      
   end
 
 end
