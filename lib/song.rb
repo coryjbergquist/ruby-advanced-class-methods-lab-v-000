@@ -61,12 +61,12 @@ class Song
       a =  filename.split("-").map do |x| x.chomp(".mp3").strip
       end
 
-        song = self.create_by_name(a[1])
+        song = self.create_by_name(name)
         #binding.pry
           song.artist_name = a[0]
-          song
+          @@all << song
       end
 
-    
+
 
   end
