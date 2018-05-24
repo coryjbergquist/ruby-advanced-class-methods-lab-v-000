@@ -50,6 +50,7 @@ class Song
   def self.new_from_filename(filename)
   a =  filename.split("-")
   a - ".mp3"
+  a
   binding.pry
   end
 
