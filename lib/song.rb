@@ -59,7 +59,7 @@ class Song
     a =  filename.split("-").map do |x| x.chomp(".mp3").strip
   end
 
-  self.create_name_and_artist(a[0], a[1])
+  self.create_name_and_artist(a[1], a[1])
 
   end
 
