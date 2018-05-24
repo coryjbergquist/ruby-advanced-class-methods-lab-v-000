@@ -32,14 +32,6 @@ class Song
         song
    end
 
-   def self.create_name_and_artist(artist, song)
-    song_name = self.new
-      song_name.name = song
-      @@all << song_name
-        song_name
-    song_name.artist_name = artist
-   end
-
    def self.find_by_name(name)
     @@all.detect do |x|
          x.name == name
