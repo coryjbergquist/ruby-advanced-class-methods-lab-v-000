@@ -50,7 +50,7 @@ class Song
   def self.new_from_filename(filename)
     a =  filename.split("-").map do |x| x.strip(".mp3")
   end
-
+binding.pry
     self.create_by_name(a[1])
       @artist_name = a[0]
       @artist_name
