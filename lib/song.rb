@@ -50,6 +50,7 @@ class Song
   def self.new_from_filename(filename)
   a =  filename.split("-")
   a.map do |x| x.chomp(".mp3")
+  end
   a
   binding.pry
   end
