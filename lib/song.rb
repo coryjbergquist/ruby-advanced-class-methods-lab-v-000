@@ -62,7 +62,7 @@ class Song
       end
 
         song = self.create_by_name(name)
-        #binding.pry
+        
           song.artist_name = a[0]
           @@all << song
           song
