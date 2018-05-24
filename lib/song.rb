@@ -13,7 +13,7 @@ class Song
   end
 
   def self.create
-    
+
     song = self.new
       @@all << song
         song
@@ -58,6 +58,8 @@ class Song
   def self.new_from_filename(filename)
     a =  filename.split("-").map do |x| x.chomp(".mp3").strip
   end
+
+  self.create_name_and_artist(a[0], a[1])
 
     self.create_by_name(a[1])
       @artist_name = a[0]
